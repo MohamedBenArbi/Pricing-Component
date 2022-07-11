@@ -1,13 +1,16 @@
 import React from 'react'
 
-export default function Card() {
+export default function Card(props) {
     return (
         <div
 
             className='
+            
+          group
           w-1/5
           min-w-[200px] 
-          bg-gradient-to-br from-purpl-100 to-purpl-200 
+          hover:bg-gradient-to-br from-purpl-100 to-purpl-200 
+
           h-[30rem] 
           rounded-2xl 
           flex justify-around flex-col items-center 
@@ -15,12 +18,12 @@ export default function Card() {
         
         ' >
 
-            <div className='font-bold text-white mt-7' >
-                <p>Professional</p>
+            <div className='font-bold text-gray-500 mt-7 group-hover:text-white' >
+                <p>{props.type}</p>
             </div>
 
-            <div className='text-6xl font-bold text-white first-letter:text-2xl '>
-                <p>$ 24.99</p>
+            <div className='text-6xl font-bold text-gray first-letter:text-2xl group-hover:text-white '>
+                <p>{props.price}</p>
 
             </div>
 
@@ -28,29 +31,29 @@ export default function Card() {
 
             <div className='w-4/5'>
                 <hr />
-                <div className='flex justify-center p-3 font-bold text-white'>
+                <div className='flex justify-center p-3 font-bold text-gray-500 group-hover:text-white'>
 
 
-                    <p> 1 TB Storage</p>
-
-                </div>
-                <hr />
-
-
-                <div className='flex justify-center p-3 font-bold text-white'>
-                    <p> 5 Users Allowed </p>
+                    <p>{props.op0}</p>
 
                 </div>
                 <hr />
 
-                <div className='flex justify-center p-3 font-bold text-white'>
-                    <p>Send Up to 10 GB</p>
+
+                <div className='flex justify-center p-3 font-bold text-gray-500 group-hover:text-white'>
+                    <p>{props.op1}</p>
+
+                </div>
+                <hr />
+
+                <div className='flex justify-center p-3 font-bold text-gray-500 group-hover:text-white'>
+                    <p>{props.op2}</p>
 
                 </div>
                 <hr />
             </div>
 
-            <button className=' text-[14px] text-purple-900  w-4/5 rounded-xl bg-white h-[40px] mb-6'>LEARN MORE </button>
+            <button className=' transition duration-700 ease-in-out text-[14px] text-white  w-4/5 rounded-xl bg-purpl-200 group-hover:bg-white group-hover:text-purple-900   h-[40px] mb-6'>LEARN MORE </button>
 
 
 
