@@ -6,8 +6,9 @@ module.exports = {
     extend: {
 
       colors: {
-        ppl: {
-          100: '#371B58',
+        purpl: {
+          100: 'hsl(236, 72%, 79%)',
+          200: 'hsl(237, 63%, 64%)',
         }
       }
     },
