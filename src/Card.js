@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Card(props) {
+export default function Card(prps) {
     return (
         <div
 
@@ -19,11 +19,11 @@ export default function Card(props) {
         ' >
 
             <div className='font-bold text-gray-500 mt-7 group-hover:text-white' >
-                <p>{props.type}</p>
+                <p>{prps.type}</p>
             </div>
 
             <div className='text-6xl font-bold text-gray first-letter:text-2xl group-hover:text-white '>
-                <p>{props.price}</p>
+                <p>{prps.price}</p>
 
             </div>
 
@@ -34,20 +34,20 @@ export default function Card(props) {
                 <div className='flex justify-center p-3 font-bold text-gray-500 group-hover:text-white'>
 
 
-                    <p>{props.op0}</p>
+                    <p>{prps.op0}</p>
 
                 </div>
                 <hr />
 
 
                 <div className='flex justify-center p-3 font-bold text-gray-500 group-hover:text-white'>
-                    <p>{props.op1}</p>
+                    <p>{prps.op1}</p>
 
                 </div>
                 <hr />
 
                 <div className='flex justify-center p-3 font-bold text-gray-500 group-hover:text-white'>
-                    <p>{props.op2}</p>
+                    <p>{prps.op2}</p>
 
                 </div>
                 <hr />
